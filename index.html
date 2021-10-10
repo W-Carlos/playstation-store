@@ -5,45 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <title>Playstation Store</title>
 </head>
 <body>
-    <div>
+    <div class="container">
 
-        <div>
-            <img src="img/logo.png" alt="Logo Playstation">
+        <div class="navbar">
+            <img class="logo" src="img/logo.png" alt="Logo Playstation">
 
             <nav>
                 <ul>
                     <li>
-                        <a>Consoles</a>
+                        <a class="nav-link">Consoles</a>
                     </li>
                     <li>
-                        <a>Acessórios</a>
+                        <a class="nav-link">Acessórios</a>
                     </li>
                     <li>
-                        <a>Controles</a>
+                        <a class="nav-link">Controles</a>
                     </li>
                     <li>
-                        <a>Outros</a>
+                        <a class="nav-link">Outros</a>
                     </li>
                 </ul>
             </nav>
         </div>
 
-        <main>
-            <div>
+        <main class="row">
+            <div class="column-1">
                 <h2>PS5 Dualshok</h2>
                 <h3>Wireless Controller for PlayStation</h3>
                 <p>Controle Original</p>
                 <h4>R$ 222,50</h4>
-                <button>Comprar agora</button>
+                <button class="button-buy">Comprar agora</button>
             </div>
 
-            <div>
-                <img src="img/controller.png" alt="Controle PlayStation">
-                <div></div>
-                <button>
+            <div class="column-2">
+                <img class="controller" src="img/controller.png" alt="Controle PlayStation">
+                <div class="color-box"></div>
+                <button class="add-cart">
                     <img src="img/add.png" alt="Adicionar ao carrinho">
                 </button>
             </div>

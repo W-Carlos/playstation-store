@@ -8,15 +8,20 @@
 body {
     background: rgb(0,212,255);
     background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(251,82,131,1) 100%);
+
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 100%;
+  
 }
 
 .container {
     width: 80%;
 
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     background-color: white;
@@ -150,8 +155,9 @@ h4 {
 }
 
 .add-cart img {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
+    max-width: 55px;
 }
 
 footer {
@@ -164,4 +170,54 @@ footer img {
     height: 35px;
     margin: 20px;
     cursor: pointer;
+}
+
+.menu-icon{
+    width: 25px;
+    margin-left: 15px;
+    display: none;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 760px) {
+    .container {
+        width: 100vw;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+        overflow-y: auto;
+    }
+
+    #menu-list {
+       /*  display: none; */
+       position: relative;
+       top: 60px;
+       left: 60px;
+       overflow: hidden;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .nav-li{
+        display: block;
+        margin-top: 5px;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .column-2 {
+        margin-bottom: 30px;
+    }
+    
+    .color-box {
+        transform: translateX(70px);
+    }
+
+    footer img {
+        height: 25px;
+    }
 }

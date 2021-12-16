@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    
     <title>Playstation Store</title>
 </head>
 <body>
@@ -17,21 +18,22 @@
             <img class="logo" src="img/logo.png" alt="Logo Playstation">
 
             <nav>
-                <ul>
-                    <li>
+                <ul id="menu-list">
+                    <li class="nav-li">
                         <a class="nav-link">Consoles</a>
                     </li>
-                    <li>
+                    <li class="nav-li">
                         <a class="nav-link">Acessórios</a>
                     </li>
-                    <li>
+                    <li class="nav-li">
                         <a class="nav-link">Controles</a>
                     </li>
-                    <li>
+                    <li class="nav-li">
                         <a class="nav-link">Outros</a>
                     </li>
                 </ul>
             </nav>
+            <img src="./img/menu.png" alt="menu" class="menu-icon" onclick="showMenu()">
         </div>
 
         <main class="row">
@@ -59,4 +61,5 @@
         </footer>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>

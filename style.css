@@ -120,7 +120,25 @@ h4 {
     cursor: pointer;
 
     background: linear-gradient(to right, #fb5283, #ff3527);
+    transition: all 0.5s ease-in-out;
 
+}
+
+.button-buy img {
+    width: 30px;
+    display: none;
+}
+
+.button-buy:hover{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.button-buy:hover img {
+    display: block;
 }
 
 .column-2 {
@@ -132,6 +150,7 @@ h4 {
 .controller {
     width: 90%;
     z-index: 2;
+    animation: animateController 2s infinite alternate ease-in-out;
 }
 
 .color-box{
@@ -194,6 +213,7 @@ footer img {
        top: 60px;
        left: 60px;
        overflow: hidden;
+       transition: all 0.8s ease-in-out;
     }
 
     .menu-icon{
@@ -219,5 +239,13 @@ footer img {
 
     footer img {
         height: 25px;
+    }
+}
+
+/*ANIMAÇÃO*/
+
+@keyframes animateController {
+    from{
+        transform: translate(-5%, -5%) rotate(-5deg);
     }
 }

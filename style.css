@@ -191,6 +191,10 @@ footer img {
     cursor: pointer;
 }
 
+footer:hover img{
+    transform: scaleX(15px);
+}
+
 .menu-icon{
     width: 25px;
     margin-left: 15px;
